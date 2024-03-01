@@ -22,10 +22,10 @@ const connectDB = (url) => {
         cronStarter(AllTaskCollection)
     
 
-    changeStream.on('change', (change) => {
-      console.log('Change event:', change);
-        cronStarter(AllTaskCollection)
-    });
+    // changeStream.on('change', (change) => {
+    //   console.log('Change event:', change);
+    //     cronStarter(AllTaskCollection)
+    // });
 
     console.log('Listening for changes...');
     
